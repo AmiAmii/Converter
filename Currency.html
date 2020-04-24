@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency</title>
+<link rel="stylesheet" type="text/css" href="Proj.css">
+</head>
+
+<body>
+
+<fieldset>
+
+<h1>Currency Converter</h1><br>
+
+
+<div class="divv">
+<img src="image/us.jpg" width="40px" height="25px">	
+<label style="color:#fff">$:  </label>
+<input  style="margin:0 0 0 18px" type="number" id="n"><br>
+</div>
+
+<div><button type="button" onclick="myFunction()">Convert</button></div>
+
+<div class="divv">
+<img src="image/iin.jpg" width="40px" height="25px">
+<label style="color:#fff">&#8360: </label>
+<input id="demo"> 
+</div>
+
+</fieldset>
+
+<script>
+
+function myFunction() {
+  var n1 = document.getElementById("n").value;
+  if(n1 <= 0)
+  {
+  alert("Input value greater than one");
+  }
+  else
+  {
+  document.getElementById("demo").value = n1*75;
+  }
+} 
+</script>
+
+</body>
+</html>
